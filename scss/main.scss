@@ -7,7 +7,7 @@
 .contacto-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto 1fr;
     grid-template-areas:
         "index-header index-header index-header index-header index-header index-header index-header"
         "index-section1 index-section1 index-section1 index-section1 index-section1 index-section1 index-section1"
@@ -18,8 +18,6 @@
 
 .index-header {
     grid-area: index-header;
-   /* display: flex;
-    justify-content: center;*/
     nav{
         .estilo-nav{
             font-size: 1.5rem;
@@ -29,6 +27,7 @@
 
 .index-section1 {
     grid-area: index-section1;
+    
     h1{
         text-align: center;
         
@@ -63,10 +62,30 @@
 .index-section2 {
     grid-area: index-section2;
     margin-top: 2rem;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 .index-footer {
     grid-area: index-footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    margin-top: 2rem;
+    p{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    div{
+        i{
+            margin-left: 1rem;
+        }
+    }
+    .footer-redes{
+        font-size: 1.5rem;
+    }
 }
 
 .section1-h1-p{
